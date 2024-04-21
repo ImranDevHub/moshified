@@ -73,4 +73,32 @@ a {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+
+.badges {
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .badges {
+    font-size: 1.2remz;
+  }
+}
+
+.badge--primary {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.badge--secondary {
+  background-color: #00d9ff;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge--secondary {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
