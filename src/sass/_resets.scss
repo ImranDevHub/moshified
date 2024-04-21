@@ -1,4 +1,6 @@
 @import "./variables";
+// Typogrphy start
+
 @mixin laptop-version() {
   @media screen and (min-width: $laptop-width) {
     @content;
@@ -42,4 +44,10 @@ h3 {
 }
 p {
   margin-top: 0;
+}
+
+// Typogrphy end
+// links
+a {
+  text-decoration: none;
 }

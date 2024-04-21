@@ -49,4 +49,28 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: #ff3400;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.25s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
