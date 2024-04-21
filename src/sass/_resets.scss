@@ -1,52 +1,45 @@
+@import "./variables";
+@mixin laptop-version() {
+  @media screen and (min-width: $laptop-width) {
+    @content;
+  }
+}
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
-  color: #918ca4;
+  color: $color-body-text;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-}
-@media screen and (min-width: 1024px) {
-  body {
+  @include laptop-version() {
     font-size: 1.8rem;
   }
 }
-
 h1,
 h2,
 h3 {
-  color: #1b0760;
+  color: $color-heading-text;
   margin: 1rem 0;
 }
-
 h1 {
   font-size: 7rem;
-}
-@media screen and (min-width: 1024px) {
-  h1 {
+  @include laptop-version() {
     font-size: 8rem;
   }
 }
-
 h2 {
   font-size: 4rem;
 }
-
 h3 {
   font-size: 3rem;
-}
-@media screen and (min-width: 1024px) {
-  h3 {
+  @include laptop-version() {
     font-size: 2.4rem;
   }
 }
-
 p {
   margin-top: 0;
-}/*# sourceMappingURL=style.css.map */
+}
