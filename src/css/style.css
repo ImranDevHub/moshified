@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -90,7 +92,7 @@ a {
 }
 
 .badge--primary {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(243, 249, 250, 0.5647058824);
 }
 
 .badge--secondary {
@@ -149,4 +151,98 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  color: #1b0760;
+}
+.input::-moz-placeholder {
+  font-size: 2rem;
+  color: #cdcbd7;
+  font-weight: 300;
+}
+.input::placeholder {
+  font-size: 2rem;
+  color: #cdcbd7;
+  font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+
+.btn {
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5px;
+  }
+}
+
+.btn--secondary {
+  background-color: #00d9ff;
+  color: #fff;
+  text-shadow: 0 0 0 #fff;
+  font-weight: bold;
+  transition: background 0.15s;
+}
+.btn--secondary:hover {
+  background-color: #00d0f5;
+  color: #fafafa;
+}
+
+.btn--block {
+  width: 100%;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid #1b0760;
+  color: #1b0760;
+  transition: background 0.15s;
+}
+.btn--outline:hover {
+  background-color: #1b0760;
+  color: #fff;
+}
+
+.btn--primary {
+  background-color: #1b0760;
+  color: #fff;
+  transition: background 0.15s;
+}
+.btn--primary:hover {
+  background-color: #180656;
+  color: #fafafa;
+}
+
+.btn--accent {
+  background-color: #ff3400;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.15s;
+}
+.btn--accent:hover {
+  background-color: #f53200;
+  color: #fafafa;
 }/*# sourceMappingURL=style.css.map */
