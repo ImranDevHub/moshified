@@ -78,3 +78,23 @@
 }
 
 // Lists end
+//Icons start
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+.icon--primary {
+  fill: $color-primary;
+}
+.icon-contianer {
+  border-radius: 100%;
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Icons end

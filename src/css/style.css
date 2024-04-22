@@ -130,4 +130,23 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon--primary {
+  fill: #2584ff;
+}
+
+.icon-contianer {
+  border-radius: 100%;
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
