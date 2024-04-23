@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+}
+
 .link-arrow {
   color: #ff3400;
   text-transform: uppercase;
@@ -87,12 +91,13 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .badges {
-    font-size: 1.2remz;
+    font-size: 1.2rem;
   }
 }
 
 .badge--primary {
-  background-color: rgba(243, 249, 250, 0.5647058824);
+  background-color: rgba(147, 147, 147, 0.1411764706);
+  margin-left: 10px;
 }
 
 .badge--secondary {
@@ -122,11 +127,12 @@ a {
 .list--tick {
   flex-direction: column;
   list-style-image: url(/public/icons/tick.svg);
-  padding: 3rem;
+  padding: 0 3rem;
+  font-weight: 600;
 }
 .list--tick .list__item {
   padding-left: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
@@ -271,12 +277,12 @@ a {
   padding: 0 4.5rem;
 }
 .card--popular .card__footer, .card--secondary .card__footer {
-  padding: 3rem 4.5rem;
+  padding: 2rem 4.5rem;
 }
 .card--popular .card--img-top, .card--secondary .card--img-top {
   background-color: #2584ff;
-  height: 100px;
   margin-bottom: 3rem;
+  padding: 1rem;
 }
 
 .card--secondary .card--img-top {
@@ -293,4 +299,46 @@ a {
 }
 .card--primary .card__body {
   text-align: center;
+}
+
+.plans {
+  margin: 2rem;
+}
+.plans .card__header {
+  padding: 3rem;
+}
+.plans .btn {
+  padding: 2rem 0;
+}
+
+.plan__name {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 7rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.plan__billing-cycle {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.plan__description {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(/public/icons/popular.svg);
+  width: 40px;
+  position: absolute;
+  top: -5px;
+  right: 5%;
 }/*# sourceMappingURL=style.css.map */
