@@ -245,4 +245,18 @@ a {
 .btn--accent:hover {
   background-color: #f53200;
   color: #fafafa;
+}
+
+.input-group {
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 0 0 30px #ccc;
+}
+.input-group .input {
+  border: none;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group .btn {
+  margin: 4px;
 }/*# sourceMappingURL=style.css.map */

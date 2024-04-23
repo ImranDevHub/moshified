@@ -87,6 +87,7 @@
 .icon--primary {
   fill: $color-primary;
 }
+
 .icon-contianer {
   border-radius: 100%;
   background-color: #f3f9fa;
@@ -102,8 +103,8 @@
 
 .input {
   padding: 1.5rem 3.5rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
   outline: none;
   color: $color-heading-text;
   &::placeholder {
@@ -181,3 +182,20 @@
 }
 
 // Buttons end
+// Input Groups start
+
+.input-group {
+  border-radius: $border-radius;
+  display: flex;
+  box-shadow: 0 0 30px $color-border;
+  .input {
+    border: none;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+  }
+  .btn {
+    margin: 4px;
+  }
+}
+
+// Input Groups end
