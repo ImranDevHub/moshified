@@ -6,6 +6,11 @@
     @content;
   }
 }
+@mixin ipad-version() {
+  @media screen and (min-width: $Ipad-width) {
+    @content;
+  }
+}
 @mixin flex-to-inline() {
   display: flex;
 }
