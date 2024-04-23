@@ -199,3 +199,44 @@
 }
 
 // Input Groups end
+// cards start
+
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+.card--popular {
+  .card__body {
+    padding: 0 4.5rem;
+  }
+  .card__footer {
+    padding: 3rem 4.5rem;
+  }
+  .card--img-top {
+    background-color: $color-primary;
+    height: 100px;
+    margin-bottom: 3rem;
+  }
+}
+.card--secondary {
+  @extend .card--popular;
+  .card--img-top {
+    background-color: $color-secondary;
+  }
+}
+.card--primary {
+  background-color: $color-primary;
+  padding: 6rem;
+
+  .card__header {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .card__body{
+    text-align: center;
+  }
+
+}
+
+// cards end

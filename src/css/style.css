@@ -259,4 +259,38 @@ a {
 }
 .input-group .btn {
   margin: 4px;
+}
+
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.card--popular .card__body, .card--secondary .card__body {
+  padding: 0 4.5rem;
+}
+.card--popular .card__footer, .card--secondary .card__footer {
+  padding: 3rem 4.5rem;
+}
+.card--popular .card--img-top, .card--secondary .card--img-top {
+  background-color: #2584ff;
+  height: 100px;
+  margin-bottom: 3rem;
+}
+
+.card--secondary .card--img-top {
+  background-color: #00d9ff;
+}
+
+.card--primary {
+  background-color: #2584ff;
+  padding: 6rem;
+}
+.card--primary .card__header {
+  white-space: nowrap;
+  text-align: center;
+}
+.card--primary .card__body {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
