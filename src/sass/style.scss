@@ -316,3 +316,47 @@
 }
 
 //media end
+// Quotes strat
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: $color-darker-body-text;
+  line-height: 1.3;
+  &__text::after {
+    content: close-quote;
+  }
+  &__text::before {
+    content: open-quote;
+  }
+  .media__img {
+    margin: 0;
+  }
+  &__company {
+    color: $color-heading-text;
+    font-size: 2rem;
+    opacity: 40%;
+    font-style: normal;
+  }
+  &__author {
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+  }
+}
+
+@include laptop-version() {
+  .quote {
+    font-size: 2.4rem;
+    &__company {
+      font-size: 1.6rem;
+    }
+    &__author {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+// Quotes end

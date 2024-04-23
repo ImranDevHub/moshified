@@ -359,7 +359,6 @@ ul {
 }
 .media {
   display: flex;
-  justify-content: space-around;
 }
 .media__title {
   margin-top: 0;
@@ -369,4 +368,45 @@ ul {
 }
 .media__img {
   margin-top: 1.5rem;
+}
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: #5c5577;
+  line-height: 1.3;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote .media__img {
+  margin: 0;
+}
+.quote__company {
+  color: #1b0760;
+  font-size: 2rem;
+  opacity: 40%;
+  font-style: normal;
+}
+.quote__author {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2.4rem;
+  }
+  .quote__company {
+    font-size: 1.6rem;
+  }
+  .quote__author {
+    font-size: 2.4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

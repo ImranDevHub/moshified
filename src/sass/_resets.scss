@@ -6,9 +6,8 @@
     @content;
   }
 }
-@mixin flex-to-inline(){
-display: flex;
-justify-content: space-around;
+@mixin flex-to-inline() {
+  display: flex;
 }
 *,
 *::after,
