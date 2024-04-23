@@ -300,3 +300,19 @@
   }
 }
 // plans end
+//media start
+
+.media {
+  @include flex-to-inline();
+  &__title {
+    margin-top: 0;
+  }
+  &__body {
+    margin-left: 2rem;
+  }
+  &__img {
+    margin-top: 1.5rem;
+  }
+}
+
+//media end

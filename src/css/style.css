@@ -356,4 +356,17 @@ ul {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+.media {
+  display: flex;
+  justify-content: space-around;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin-left: 2rem;
+}
+.media__img {
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
