@@ -134,7 +134,7 @@
   text-align: center;
   white-space: nowrap;
   @include laptop-version() {
-    font-size: 1.5px;
+    font-size: 1.5rem;
   }
 }
 .btn--secondary {
@@ -281,9 +281,22 @@
       position: absolute;
       top: -3px;
       right: 5%;
-      
     }
   }
 }
 
+@include laptop-version() {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
+}
 // plans end
