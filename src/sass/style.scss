@@ -148,6 +148,10 @@
     color: darken($color: #fff, $amount: 2%);
   }
 }
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--block {
   width: 100%;
   font-weight: 600;
@@ -228,18 +232,11 @@
     background-color: $color-secondary;
   }
 }
-// footer card
+//callout card
 .card--primary {
   background-color: $color-primary;
   padding: 6rem;
-
-  .card__header {
-    white-space: nowrap;
-    text-align: center;
-  }
-  .card__body {
-    text-align: center;
-  }
+  box-shadow: none;
 }
 
 // cards end
@@ -378,3 +375,87 @@
 }
 
 //Grids end
+// Testimonial start
+
+.testimonial {
+  margin: 3rem;
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+  &__body {
+    @include flex-to-inline {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__header {
+    position: relative;
+    padding: 1rem 6rem;
+    .icon-contianer {
+      position: absolute;
+      top: 3rem;
+      right: 32px;
+      background-color: $color-accent;
+
+      .icon {
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    @include ipad-version() {
+      padding: 3rem;
+      .icon-contianer {
+        right: 0;
+        top: 6rem;
+      }
+    }
+  }
+  .quote {
+    @include ipad-version() {
+      font-size: 2.4rem;
+      margin-left: 6rem;
+      &__company {
+        font-size: 1.6rem;
+      }
+      &__author {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+// Testimonial end
+//callout satrt
+.callout {
+  .card__footer {
+    @include flex-to-inline();
+    justify-content: center;
+    align-items: center;
+
+   
+  }
+  &__heading,
+  &__content {
+    color: #fff;
+    text-align: center;
+    @include laptop-version(){
+      text-align: left;
+    }
+  }
+   @include ipad-version(){
+    
+
+    .grid--1x2{
+      grid-template-columns: 1fr auto;
+    }
+        .card__footer{
+          justify-content: start;
+        margin-left: 2rem;
+        }
+     
+    }
+}
+
+//callout end

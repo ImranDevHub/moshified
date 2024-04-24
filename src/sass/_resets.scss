@@ -13,7 +13,9 @@
 }
 @mixin flex-to-inline() {
   display: flex;
+  @content;
 }
+
 *,
 *::after,
 *::before {
@@ -21,6 +23,9 @@
 }
 html {
   font-size: 62.5%;
+}
+img {
+  object-fit: cover;
 }
 body {
   color: $color-body-text;

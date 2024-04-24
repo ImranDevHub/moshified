@@ -8,6 +8,11 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   color: #918ca4;
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -215,6 +220,11 @@ ul {
   color: #fafafa;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   font-weight: 600;
@@ -292,13 +302,7 @@ ul {
 .card--primary {
   background-color: #2584ff;
   padding: 6rem;
-}
-.card--primary .card__header {
-  white-space: nowrap;
-  text-align: center;
-}
-.card--primary .card__body {
-  text-align: center;
+  box-shadow: none;
 }
 
 .plans {
@@ -422,5 +426,77 @@ ul {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.testimonial {
+  margin: 3rem;
+}
+.testimonial__img {
+  height: 100%;
+  width: 100%;
+}
+.testimonial__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial__header {
+  position: relative;
+  padding: 1rem 6rem;
+}
+.testimonial__header .icon-contianer {
+  position: absolute;
+  top: 3rem;
+  right: 32px;
+  background-color: #ff3400;
+}
+.testimonial__header .icon-contianer .icon {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .testimonial__header {
+    padding: 3rem;
+  }
+  .testimonial__header .icon-contianer {
+    right: 0;
+    top: 6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote {
+    font-size: 2.4rem;
+    margin-left: 6rem;
+  }
+  .testimonial .quote__company {
+    font-size: 1.6rem;
+  }
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+}
+
+.callout .card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.callout__heading, .callout__content {
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .callout__heading, .callout__content {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout .card__footer {
+    justify-content: start;
+    margin-left: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
