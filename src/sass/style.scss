@@ -575,3 +575,37 @@
 }
 
 //Navigation Bar end
+//Hero start
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  &__heading {
+    font-size: 5.5rem;
+    color: #fff;
+  }
+  &__text {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+  }
+  &__banner {
+    width: 100%;
+  }
+}
+@include ipad-version() {
+  .hero {
+    padding-top: 0;
+    &__content {
+      text-align: left;
+    }
+    &__heading {
+      font-size: 7rem;
+    }
+    &__grid {
+      align-items: center;
+    }
+  }
+}
+
+//Hero end
