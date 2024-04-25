@@ -456,7 +456,7 @@
 //callout end
 //collabsible start
 
-.collabsible {
+.collapsible {
   &__header {
     display: flex;
     justify-content: space-between;
@@ -472,10 +472,10 @@
     transition: all 0.3s;
   }
   &--expanded {
-    .collabsible__icon {
+    .collapsible__icon {
       transform: rotate(0);
     }
-    .collabsible__content {
+    .collapsible__content {
       max-height: 100vh;
       opacity: 1;
     }
@@ -494,17 +494,17 @@
 .block__heading {
   margin-top: 0;
 }
-.block--dark{
+.block--dark {
   background-color: #000;
-   color: #7b858b;
+  color: #7b858b;
 }
 .block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: $padding-vertical + 4rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
 .block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: $padding-vertical + 4rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 .container {
@@ -513,3 +513,65 @@
 }
 
 //Block end
+//Navigation Bar start
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+  @include ipad-version() {
+    .collapsible__content {
+      max-height: 100vh;
+      opacity: 1;
+    }
+    .navbar__icon {
+      display: none;
+    }
+    .navbar__list {
+      width: auto;
+      display: flex;
+    }
+    .navbar__item {
+      border: none;
+      font-size: 1.6rem;
+    }
+  }
+  &__icon {
+    fill: #fff;
+    margin: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  &__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  &__item {
+    border-bottom: 1px solid #222;
+    padding: 0.5rem 2rem;
+    > a {
+      color: #d2d0db;
+      transition: color 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__brand {
+    transform: translateY(5px);
+  }
+}
+.collapsible--expanded {
+  .navbar__icon {
+    opacity: 1;
+    box-shadow: 0 0 10px 2px #666;
+    border-radius: 5px;
+  }
+}
+
+//Navigation Bar end

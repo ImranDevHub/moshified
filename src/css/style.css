@@ -501,24 +501,24 @@ ul {
   }
 }
 
-.collabsible__header {
+.collapsible__header {
   display: flex;
   justify-content: space-between;
 }
-.collabsible__icon {
+.collapsible__icon {
   transform: rotate(-90deg);
   transition: all 0.3s;
 }
-.collabsible__content {
+.collapsible__content {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.3s;
 }
-.collabsible--expanded .collabsible__icon {
+.collapsible--expanded .collapsible__icon {
   transform: rotate(0);
 }
-.collabsible--expanded .collabsible__content {
+.collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
@@ -541,13 +541,13 @@ ul {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: 10rem;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 
 .block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: 10rem;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
@@ -555,4 +555,62 @@ ul {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navbar .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  .navbar .navbar__icon {
+    display: none;
+  }
+  .navbar .navbar__list {
+    width: auto;
+    display: flex;
+  }
+  .navbar .navbar__item {
+    border: none;
+    font-size: 1.6rem;
+  }
+}
+.navbar__icon {
+  fill: #fff;
+  margin: 0.5rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.navbar__list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.navbar__item {
+  border-bottom: 1px solid #222;
+  padding: 0.5rem 2rem;
+}
+.navbar__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+.navbar__item > a:hover {
+  color: #fff;
+}
+.navbar__brand {
+  transform: translateY(5px);
+}
+
+.collapsible--expanded .navbar__icon {
+  opacity: 1;
+  box-shadow: 0 0 10px 2px #666;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
