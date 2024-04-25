@@ -433,29 +433,53 @@
     @include flex-to-inline();
     justify-content: center;
     align-items: center;
-
-   
   }
   &__heading,
   &__content {
     color: #fff;
     text-align: center;
-    @include laptop-version(){
+    @include laptop-version() {
       text-align: left;
     }
   }
-   @include ipad-version(){
-    
-
-    .grid--1x2{
+  @include ipad-version() {
+    .grid--1x2 {
       grid-template-columns: 1fr auto;
     }
-        .card__footer{
-          justify-content: start;
-        margin-left: 2rem;
-        }
-     
+    .card__footer {
+      justify-content: start;
+      margin-left: 2rem;
     }
+  }
 }
 
 //callout end
+//collabsible start
+
+.collabsible {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    transform: rotate(-90deg);
+    transition: all 0.3s;
+  }
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &--expanded {
+    .collabsible__icon {
+      transform: rotate(0);
+    }
+    .collabsible__content {
+      max-height: 100vh;
+      opacity: 1;
+    }
+  }
+}
+
+//collabsible end

@@ -499,4 +499,26 @@ ul {
     justify-content: start;
     margin-left: 2rem;
   }
+}
+
+.collabsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collabsible__icon {
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+.collabsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.collabsible--expanded .collabsible__icon {
+  transform: rotate(0);
+}
+.collabsible--expanded .collabsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
