@@ -103,8 +103,7 @@ ul {
 }
 
 .badge--primary {
-  background-color: rgba(147, 147, 147, 0.1411764706);
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .badge--secondary {
@@ -305,9 +304,15 @@ ul {
   margin-bottom: 3rem;
   padding: 1rem;
 }
+.card--popular .badge--primary, .card--secondary .badge--primary {
+  background: #126de4;
+}
 
 .card--secondary .card--img-top {
   background-color: #00d9ff;
+}
+.card--secondary .badge--primary {
+  background: #02cdf1;
 }
 
 .card--primary {
@@ -318,12 +323,16 @@ ul {
 
 .plans {
   margin: 2rem;
+  transition: transform 0.3s ease-out;
 }
 .plans .card__header {
   padding: 3rem;
 }
 .plans .btn {
   padding: 2rem 0;
+}
+.plans:hover {
+  transform: scale(1.05);
 }
 
 .plan__name {
@@ -332,7 +341,7 @@ ul {
 }
 
 .plan__price {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 400;
   color: #fff;
 }
@@ -347,6 +356,12 @@ ul {
   font-size: 2rem;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
 .plan--popular .card__header {
   position: relative;
 }
@@ -354,7 +369,7 @@ ul {
   content: url(/public/icons/popular.svg);
   width: 40px;
   position: absolute;
-  top: -3px;
+  top: -6px;
   right: 5%;
 }
 
@@ -705,4 +720,12 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-template-rows: 6rem;
   }
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+.block-plan__header {
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */

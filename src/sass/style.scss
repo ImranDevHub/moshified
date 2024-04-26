@@ -36,8 +36,7 @@
   }
 }
 .badge--primary {
-  background-color: #93939324;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .badge--secondary {
   background-color: $color-secondary;
@@ -235,11 +234,17 @@
     margin-bottom: 3rem;
     padding: 1rem;
   }
+  .badge--primary {
+    background: #126de4;
+  }
 }
 .card--secondary {
   @extend .card--popular;
   .card--img-top {
     background-color: $color-secondary;
+  }
+  .badge--primary {
+    background: #02cdf1;
   }
 }
 //callout card
@@ -254,11 +259,15 @@
 
 .plans {
   margin: 2rem;
+  transition: transform 0.3s ease-out;
   .card__header {
     padding: 3rem;
   }
   .btn {
     padding: 2rem 0;
+  }
+  &:hover {
+    transform: scale(1.05);
   }
 }
 .plan__name {
@@ -266,7 +275,7 @@
   font-size: 2.4rem;
 }
 .plan__price {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 400;
   color: #fff;
 }
@@ -279,14 +288,17 @@
   font-size: 2rem;
 }
 .plan--popular {
+  transform: scale(1.1);
+  &:hover {
+    transform: scale(1.15);
+  }
   .card__header {
     position: relative;
-
     &::before {
       content: url(/public/icons/popular.svg);
       width: 40px;
       position: absolute;
-      top: -3px;
+      top: -6px;
       right: 5%;
     }
   }
@@ -667,4 +679,16 @@
 }
 
 //Domain end
-//
+//Plan Block start
+
+.block-plan {
+  .card {
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  &__header {
+    white-space: nowrap;
+  }
+}
+
+//Plan Block end
