@@ -18,6 +18,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
+  min-width: 100vw;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -155,6 +156,10 @@ ul {
   fill: #2584ff;
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-contianer {
   border-radius: 100%;
   background-color: #f3f9fa;
@@ -207,6 +212,12 @@ ul {
   .btn {
     font-size: 1.5rem;
   }
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--secondary {
@@ -267,12 +278,11 @@ ul {
 .input-group {
   border-radius: 30px;
   display: flex;
-  box-shadow: 0 0 30px #ccc;
 }
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -646,5 +656,53 @@ ul {
   }
   .hero__grid {
     align-items: center;
+  }
+}
+.domain__heading {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.domain__text {
+  font-size: 2rem;
+}
+.domain__input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  margin: 4rem auto;
+}
+@media screen and (min-width: 768px) {
+  .domain__input-group {
+    max-width: 670px;
+  }
+}
+.domain__list {
+  padding: 0;
+  list-style-type: none;
+  font-size: 2rem;
+  color: #1b0760;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .domain__list {
+    font-size: 1.5rem;
+    max-width: 730px;
+  }
+}
+.domain__list .domain__item {
+  white-space: nowrap;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.grid--2x3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  margin: 4rem auto;
+  justify-items: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .grid--2x3 {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: 6rem;
   }
 }/*# sourceMappingURL=style.css.map */
