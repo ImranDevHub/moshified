@@ -692,3 +692,25 @@
 }
 
 //Plan Block end
+//feature satrt
+
+.features {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+  &__img {
+    width: 100%;
+  }
+  &--easy {
+    margin-top: 9rem;
+  }
+}
+@include ipad-version() {
+  .features:nth-child(even) .features--content {
+    order: 2;
+  }
+  .features--easy {
+    margin-top: 5rem;
+  }
+}
+
+//feature end
