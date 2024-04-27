@@ -751,8 +751,80 @@
 //showcase block end
 //testimonial block start
 
-.block-testimonial{
+.block-testimonial {
   margin-top: 5rem;
 }
 
 //testimonial block end
+//Fotter block satrt
+.block-footer {
+  background-color: #232323;
+  position: relative;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  &__brand {
+    order: 5;
+    text-align: center;
+    margin-top: 7rem;
+  }
+  &__collapsible {
+    border-bottom: 1px solid #393939;
+    padding: 2rem 0;
+  }
+  &--list {
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+    a {
+      color: inherit;
+      transition: color 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__heading {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+@include laptop-version() {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+     padding: 5rem 0;
+    &__brand {
+      order: unset;
+      margin: 2rem;
+      font-size: 1.5rem;
+      img {
+      width: 110%;
+    }
+    }
+    .collapsible__content {
+      opacity: 1;
+      max-height: 100vh;
+    }
+    &__icon {
+      display: none;
+    }
+    &__collapsible {
+      border: 0;
+      font-size: 1.5rem;
+      margin: 0 2rem;
+    }
+    &__heading {
+      font-size: 1.6rem;
+    }
+  }
+  .block-footer{
+    padding: 6rem 0;
+  }
+  // .block-footer__callout {
+  // }
+}
+
+//Fotter block end
