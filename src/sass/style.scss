@@ -692,7 +692,7 @@
 }
 
 //Plan Block end
-//feature satrt
+//feature block satrt
 
 .features {
   gap: 4rem 2rem;
@@ -713,4 +713,44 @@
   }
 }
 
-//feature end
+//feature block end
+//showcase block satr
+
+.block-showcase {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  .block__heading {
+    color: #fff;
+  }
+}
+.showcase {
+  gap: 4rem;
+  &__img > img {
+    width: 100%;
+  }
+
+  &__list {
+    padding-right: 3rem;
+    list-style-type: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: center;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
+}
+
+//showcase block end
+//testimonial block start
+
+
+
+//testimonial block end
