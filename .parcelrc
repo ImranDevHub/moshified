@@ -1,0 +1,6 @@
+{
+  "extends": "@parcel/config-default",
+  "optimization": {
+    "minify": false
+  }
+}
