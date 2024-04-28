@@ -4,7 +4,7 @@
       "@babel/preset-env",
       {
         "targets": {
-          "node": "12.14.1" // Replace with your desired Node.js version
+          "node": "18.16.0" // Replace with your desired Node.js version
         }
       }
     ]
