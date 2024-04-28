@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moshify.</title>
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds."
+    />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:description" content="Moshify..." />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1713769931183-1537d9a8126b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+    <meta property="og:url" content="https://moshified.com/" />
+    <title>Moshify - Go Online for Just $9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,15 +29,15 @@
   <body>
     <header>
       <nav class="navbar collapsible">
-        <a href="/" class="navbar__brand"
+        <a href="/" class="navbar__brand" data-aos="zoom-in"
           ><img
             src="./public/icons/logo.svg"
             alt="A beautifull Moshify text by white color, symbolic logo looks symboal 'M' accoliction of dodgerblue and tomato color "
         /></a>
-        <svg class="icon navbar__icon">
+        <svg class="icon navbar__icon" data-aos="zoom-in">
           <use xlink:href="./public/images/sprite.svg#menu"></use>
         </svg>
-        <ul class="navbar__list collapsible__content">
+        <ul class="navbar__list collapsible__content" data-aos="zoom-in">
           <li class="navbar__item"><a href="#">Hosting</a></li>
           <li class="navbar__item"><a href="#">SVP</a></li>
           <li class="navbar__item"><a href="#">Domian</a></li>
@@ -37,13 +49,15 @@
       <section class="block block--dark block--skewed-left hero">
         <article class="grid grid--1x2 container hero__grid">
           <header class="block__header hero__content">
-            <h1 class="block__heading hero__heading">Cloud Hosting for Pros</h1>
+            <h1 data-aos="fade-right" class="block__heading hero__heading">
+              Cloud Hosting for Pros
+            </h1>
             <p class="hero__text">
               Deploy your website in less than 60 seconds.
             </p>
             <a href="#" class="btn btn--accent btn--stretched">get satrted</a>
           </header>
-          <div>
+          <div data-aos="zoom-in">
             <img
               src="./public/images/banner.png"
               alt=" "
@@ -52,7 +66,7 @@
           </div>
         </article>
       </section>
-      <section class="block container domain">
+      <section data-aos="fade-up" class="block container domain">
         <header class="block__header">
           <h2 class="block__heading domain__heading">
             The best webhosting Starting at per month
@@ -73,7 +87,7 @@
               <svg class="icon icon--white">
                 <use xlink:href="./public/images/sprite.svg#search"></use>
               </svg>
-              <sapn>search</sapn>
+              search
             </button>
           </div>
         </div>
@@ -90,9 +104,9 @@
           </ul>
         </div>
       </section>
-      <section class="block container">
+      <section data-aos="fade-up" class="block container">
         <div class="grid grid--1x3 plans--center">
-          <div class="plans block-plan" data-aos="zoom-out-right">
+          <div class="plans block-plan">
             <article class="card card--secondary">
               <header class="card__header card--img-top block-plan__header">
                 <h3 class="plan__name">Entry</h3>
@@ -120,7 +134,7 @@
               </div>
             </article>
           </div>
-          <div class="plans plan--popular block-plan" data-aos="zoom-out">
+          <div class="plans plan--popular block-plan">
             <article class="card card--popular">
               <header class="card__header card--img-top block-plan__header">
                 <h3 class="plan__name">Entry</h3>
@@ -142,7 +156,7 @@
               </div>
             </article>
           </div>
-          <div class="plans block-plan" data-aos="zoom-out-left">
+          <div class="plans block-plan">
             <article class="card card--secondary">
               <header class="card__header card--img-top block-plan__header">
                 <h3 class="plan__name">Entry</h3>
@@ -175,7 +189,7 @@
           </p>
         </header>
         <article class="grid grid--1x2 features features--easy">
-          <div class="features--content" data-aos="fade-left">
+          <div data-aos="fade-right" class="features--content">
             <div class="features__icon">
               <span class="icon-contianer">
                 <svg class="icon icon--primary">
@@ -196,20 +210,20 @@
               <a href="#" class="link-arrow"> Learn More </a>
             </div>
           </div>
-          <div data-aos="fade-right">
+          <div data-aos="zoom-in">
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  ./public/images/easy@1x.webp  570w,
-                  ./public/images/easy@2x.webp 1140w
+                  ./public/images/easy@1x.webp 1x,
+                  ./public/images/easy@2x.webp 2x
                 "
               />
               <source
                 type="image/png"
                 srcset="
-                  ./public/images/easy@1x.png  570w,
-                  ./public/images/easy@2x.png 1140w
+                  ./public/images/easy@1x.png 1x,
+                  ./public/images/easy@2x.png 2x
                 "
               />
               <img
@@ -221,7 +235,7 @@
           </div>
         </article>
         <article class="grid grid--1x2 features features--fast">
-          <div class="features--content" data-aos="fade-right">
+          <div class="features--content">
             <div class="features__icon">
               <span class="icon-contianer">
                 <svg class="icon icon--primary">
@@ -242,20 +256,20 @@
               <a href="#" class="link-arrow"> Learn More </a>
             </div>
           </div>
-          <div class="features--img" data-aos="fade-left">
+          <div class="features--img">
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  ./public/images/fast@1x.webp  570w,
-                  ./public/images/fast@2x.webp 1140w
+                  ./public/images/fast@1x.webp 1x,
+                  ./public/images/fast@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  ./public/images/fast@1x.jpg  570w,
-                  ./public/images/fast@2x.jpg 1140w
+                  ./public/images/fast@1x.jpg 1x,
+                  ./public/images/fast@2x.jpg 2x
                 "
               />
               <img
@@ -267,7 +281,7 @@
           </div>
         </article>
         <article class="grid grid--1x2 features features--wordpress">
-          <div class="features--content" data-aos="fade-left">
+          <div class="features--content">
             <div class="features__icon">
               <span class="icon-contianer">
                 <svg class="icon icon--primary">
@@ -288,20 +302,20 @@
               <a href="#" class="link-arrow"> Learn More </a>
             </div>
           </div>
-          <div data-aos="fade-right">
+          <div>
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  ./public/images/wordpress@1x.webp  570w,
-                  ./public/images/wordpress@2x.webp 1140w
+                  ./public/images/wordpress@1x.webp 1x,
+                  ./public/images/wordpress@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  ./public/images/wordpress@1x.jpg  570w,
-                  ./public/images/wordpress@2x.jpg 1140w
+                  ./public/images/wordpress@1x.jpg 1x,
+                  ./public/images/wordpress@2x.jpg 2x
                 "
               />
               <img
@@ -313,7 +327,7 @@
           </div>
         </article>
         <article class="grid grid--1x2 features features--wordpress">
-          <div class="features--content" data-aos="fade-right">
+          <div class="features--content">
             <div class="features__icon">
               <span class="icon-contianer">
                 <svg class="icon icon--primary">
@@ -334,20 +348,20 @@
               <a href="#" class="link-arrow"> Learn More </a>
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div>
             <picture>
               <source
                 type="image/webp"
                 srcset="
-                  ./public/images/support@1x.webp  570w,
-                  ./public/images/support@2x.webp 1140w
+                  ./public/images/support@1x.webp 1x,
+                  ./public/images/support@2x.webp 2x
                 "
               />
               <source
                 type="image/jpg"
                 srcset="
-                  ./public/images/support@1x.jpg  570w,
-                  ./public/images/support@2x.jpg 1140w
+                  ./public/images/support@1x.jpg 1x,
+                  ./public/images/support@2x.jpg 2x
                 "
               />
               <img
@@ -364,25 +378,25 @@
           <h2 class="block__heading">User-Friendly Control Panel</h2>
         </header>
         <article class="grid grid--1x2 showcase">
-          <div class="showcase__banner">
+          <div data-aos="fade-right" class="showcase__banner">
             <picture class="showcase__img">
               <source
                 type="image/webp"
                 srcset="
-                  ./public/images/ipad@1x.webp  570w,
-                  ./public/images/ipad@2x.webp 1140w
+                  ./public/images/ipad@1x.webp 1x,
+                  ./public/images/ipad@2x.webp 2x
                 " />
               <source
                 type="image/png"
                 srcset="
-                  ./public/images/ipad@1x.png  570w,
-                  ./public/images/ipad@2x.png 1140w
+                  ./public/images/ipad@1x.png 1x,
+                  ./public/images/ipad@2x.png 2x
                 " />
 
               <img src="./public/images/ipad@2x.png" alt=" "
             /></picture>
           </div>
-          <div class="showcase__content">
+          <div data-aos="fade-up" class="showcase__content">
             <ul class="showcase__list">
               <li>
                 <div class="media">
@@ -443,7 +457,7 @@
           </div>
         </article>
       </section>
-      <section class="block">
+      <section data-aos="zoom-in" class="block">
         <header class="block__header">
           <h2 class="block__heading">What our Customer are Saying</h2>
           <p>
@@ -490,25 +504,25 @@
         </article>
       </section>
     </main>
-    <footer class="block block--dark block-footer">
-      <div class="callout container block-footer__callout">
-        <article class="card card--primary grid grid--1x2">
-          <div class="callout__content">
-            <div class="card__header callout__header">
-              <h2 class="callout__heading">Ready To Get Started?</h2>
-            </div>
-            <div class="card__body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                delectus molestiae unde numquam vel non asperiores nobis libero
-              </p>
-            </div>
+    <div data-aos="fade-down" class="container callout callout-signup">
+      <article class="card card--primary grid grid--1x2">
+        <div class="callout__content">
+          <div class="card__header callout__header">
+            <h2 class="callout__heading">Ready To Get Started?</h2>
           </div>
-          <div class="card__footer">
-            <button class="btn btn--secondary btn--stretched">buy now</button>
+          <div class="card__body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+              delectus molestiae unde numquam vel non asperiores nobis libero
+            </p>
           </div>
-        </article>
-      </div>
+        </div>
+        <div class="card__footer">
+          <button class="btn btn--secondary btn--stretched">buy now</button>
+        </div>
+      </article>
+    </div>
+    <footer data-aos="fade-up" class="block block--dark block-footer">
       <article class="container footer">
         <div class="footer__brand">
           <div><img src="./public/icons/logo.svg" alt=" " /></div>
@@ -518,7 +532,7 @@
         </div>
         <div class="footer__collapsible">
           <article class="collapsible">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
               <h2 class="collapsible__heading footer__heading">PRODUCTS</h2>
               <span class="footer__icon">
                 <img
@@ -527,7 +541,7 @@
                   class="icon collapsible__icon"
                 />
               </span>
-            </header>
+            </div>
             <div class="collapsible__content">
               <ul class="footer--list">
                 <li><a href="#">WordPress Hosting </a></li>
@@ -541,7 +555,7 @@
         </div>
         <div class="footer__collapsible">
           <article class="collapsible">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
               <h2 class="collapsible__heading footer__heading">COMPANY</h2>
               <span class="footer__icon">
                 <img
@@ -550,7 +564,7 @@
                   class="icon collapsible__icon"
                 />
               </span>
-            </header>
+            </div>
             <div class="collapsible__content">
               <ul class="footer--list">
                 <li><a href="#">About </a></li>
@@ -566,7 +580,7 @@
         </div>
         <div class="footer__collapsible">
           <article class="collapsible">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
               <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
               <span class="footer__icon">
                 <img
@@ -575,7 +589,7 @@
                   class="icon collapsible__icon"
                 />
               </span>
-            </header>
+            </div>
             <div class="collapsible__content">
               <ul class="footer--list">
                 <li><a href="#">Contact</a></li>
@@ -590,7 +604,7 @@
         </div>
         <div class="footer__collapsible">
           <article class="collapsible">
-            <header class="collapsible__header">
+            <div class="collapsible__header">
               <h2 class="collapsible__heading footer__heading">DOMAINS</h2>
               <span class="footer__icon">
                 <img
@@ -599,7 +613,7 @@
                   class="icon collapsible__icon"
                 />
               </span>
-            </header>
+            </div>
             <div class="collapsible__content">
               <ul class="footer--list">
                 <li><a href="#">Domain Checker</a></li>
