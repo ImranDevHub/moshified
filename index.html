@@ -7,14 +7,14 @@
       name="description"
       content="Deploy your websites in less than 60 seconds."
     />
-    <meta property="og:title" content="Moshify..." />
-    <meta property="og:description" content="Moshify..." />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Moshify - Go Online for just $9" />
     <meta
-      property="og:image"
-      content="https://images.unsplash.com/photo-1713769931183-1537d9a8126b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      property="og:description"
+      content="In Moshify-imran.netlify.app Deploy your websites in less than 60 seconds."
     />
-    <meta property="og:url" content="https://moshified.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./public/images/logo.png" />
+    <meta property="og:url" content="https://moshify-imran.nitlify.app/" />
     <title>Moshify - Go Online for Just $10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,11 +66,27 @@
             <a href="#" class="btn btn--accent btn--stretched">get satrted</a>
           </header>
           <div data-aos="zoom-in">
-            <img
-              src="./public/images/banner.png"
-              alt=" "
-              class="hero__banner"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./public/images/banner@.webp   1x,
+                  ./public/images/banner@2x.webp 2x
+                "
+              />
+              <source
+                type="image/png"
+                srcset="
+                  ./public/images/banner@.png   1x,
+                  ./public/images/banner@2x.png 2x
+                "
+              />
+              <img
+                src="./public/images/banner@2x.png"
+                alt="banner"
+                class="hero__banner"
+              />
+            </picture>
           </div>
         </article>
       </section>
